@@ -31,18 +31,6 @@
 - has_many :users, through: :prototype_users
 - has_many :comments
 
-## prototype_users テーブル
-
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| room   | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :prototype
-- belongs_to :user
-
 
 # commentsテーブル
 
